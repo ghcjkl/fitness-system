@@ -1,0 +1,29 @@
+# ---------- 构建产物 ----------
+backend/target/
+frontend/node_modules/
+frontend/dist/
+ai/__pycache__/
+ai/**/__pycache__/
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+backend/.uploads/
+
+# ---------- Python 虚拟环境 ----------
+ai/.venv/
+venv/
+
+# ---------- 敏感配置（务必不要提交） ----------
+ai/.env
+
+# ---------- 大文件模型（本地保留，不入库） ----------
+ai/models/
+
+# ---------- 日志与临时文件 ----------
+*.log
+run.log
+run.err.log

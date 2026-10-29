@@ -1,0 +1,6 @@
+fastapi>=0.110,<1.0
+uvicorn>=0.30,<1.0
+requests>=2.31
+numpy>=1.24,<2.0
+# 向量化依赖：本地 bge-small-zh-v1.5，torch 由该依赖自动安装
+sentence-transformers>=2.7,<3.0

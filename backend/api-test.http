@@ -1,0 +1,32 @@
+### 1.登录接口（先运行此接口获取token）
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "123456"
+}
+
+### 2.查询当前登录用户信息
+GET http://localhost:8080/api/user
+token: {{token}}
+
+### 3.分页查询饮食记录
+GET http://localhost:8080/api/diet/list?pageNum=1&pageSize=10
+token: {{token}}
+
+### 4.新增饮食记录
+POST http://localhost:8080/api/diet/add
+Content-Type: application/json
+token: {{token}}
+
+{
+  "foodName": "鸡胸肉",
+  "calorie": 120,
+  "eatTime": "2026-07-03",
+  "userId": 1
+}
+
+### 5.删除指定id饮食记录（末尾数字替换为实际数据id）
+DELETE http://localhost:8080/api/diet/delete/1
+token: {{token}}
